@@ -66,6 +66,7 @@ const Desc = styled.div`
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 3px;
+  width: 80%;
 `;
 
 const Image = styled.img`
