@@ -10,6 +10,7 @@ const Container = styled.div`
   background-color: #${(props) => props.bg};
   display: flex;
   position: relative;
+  overflow: hidden;
 `;
 
 const Wrapper = styled.div`
