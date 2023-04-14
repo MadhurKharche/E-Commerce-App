@@ -6,6 +6,8 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 const Container = styled.div`
   height: 60px;
+  background-color: #f0f0f0;
+  color: #3c486b;
 `;
 
 const Wrapper = styled.div`
@@ -46,6 +48,7 @@ const SearchContainer = styled.div`
 
 const Input = styled.input`
   border: none;
+  background: transparent;
 `;
 
 const Logo = styled.h1`
@@ -64,7 +67,7 @@ function Navbar() {
           <Language>EN</Language>
           <SearchContainer>
             <Input />
-            <SearchIcon style={{ color: "grey", fontSize: 16 }} />
+            <SearchIcon style={{ color: "black", fontSize: 16 }} />
           </SearchContainer>
         </Left>
 
