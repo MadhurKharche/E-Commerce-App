@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import SearchIcon from "@mui/icons-material/Search";
+import Badge from "@mui/material/Badge";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 const Container = styled.div`
   height: 60px;
@@ -13,11 +15,21 @@ const Wrapper = styled.div`
 `;
 
 const Left = styled.div`
+  flex: 1;
   display: flex;
   align-items: center;
 `;
-const Center = styled.div``;
-const Right = styled.div``;
+const Center = styled.div`
+  flex: 1;
+  text-align: center;
+`;
+const Right = styled.div`
+  flex: 1;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+`;
 
 const Language = styled.div`
   font-size: 14px;
@@ -36,6 +48,14 @@ const Input = styled.input`
   border: none;
 `;
 
+const Logo = styled.h1`
+  font-weight: bold;
+`;
+
+const MenuItem = styled.div`
+  margin-right: 25px;
+`;
+
 function Navbar() {
   return (
     <Container className="navbar">
@@ -44,12 +64,20 @@ function Navbar() {
           <Language>EN</Language>
           <SearchContainer>
             <Input />
-            <SearchIcon />
+            <SearchIcon style={{ color: "grey", fontSize: 16 }} />
           </SearchContainer>
         </Left>
 
-        <Center>Center</Center>
-        <Right>Right</Right>
+        <Center>
+          <Logo>Slipknot.</Logo>
+        </Center>
+        <Right>
+          <MenuItem>REGISTER</MenuItem>
+          <MenuItem>SIGN IN</MenuItem>
+          <Badge badgeContent={4} color="primary">
+            <ShoppingCartOutlinedIcon color="action" />
+          </Badge>
+        </Right>
       </Wrapper>
     </Container>
   );
