@@ -5,6 +5,9 @@ import { popularProducts } from "../data";
 
 const Container = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
 `;
 
 export default function ProductList() {
