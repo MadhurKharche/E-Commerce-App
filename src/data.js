@@ -56,3 +56,21 @@ export const popularProducts = [
     img: "https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
   },
 ];
+
+export const categoriesList = [
+  {
+    id: 1,
+    img: "images/4.jpg",
+    title: "SHIRT STYLE",
+  },
+  {
+    id: 2,
+    img: "images/5.jpg",
+    title: "LOUNGEWEAR LOVE",
+  },
+  {
+    id: 3,
+    img: "images/6.jpg",
+    title: "LIGHT JACKETS",
+  },
+];
