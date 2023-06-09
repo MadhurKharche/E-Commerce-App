@@ -34,12 +34,13 @@ const Right = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  ${mobile({ justifyContent: "center" })}
+  ${mobile({ lex: "2", justifyContent: "center" })}
 `;
 
 const Language = styled.div`
   font-size: 14px;
   cursor: pointer;
+  ${mobile({ display: "none" })}
 `;
 
 const SearchContainer = styled.div`
@@ -63,6 +64,7 @@ const Logo = styled.h1`
 
 const MenuItem = styled.div`
   margin-right: 25px;
+  cursor: pointer;
   ${mobile({ fontSize: "12px", marginLeft: "10px" })}
 `;
 

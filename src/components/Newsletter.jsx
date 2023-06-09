@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import SendIcon from "@mui/icons-material/Send";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   height: 60vh;
@@ -14,6 +15,7 @@ const Container = styled.div`
 const Heading = styled.h1`
   font-size: 70px;
   margin-bottom: 20px;
+  ${mobile({ fontSize: "50px" })}
 `;
 
 const Subheading = styled.div`
@@ -22,6 +24,7 @@ const Subheading = styled.div`
   letter-spacing: 1px;
   margin-bottom: 20px;
   letter-spacing: 2px;
+  ${mobile({ textAlign: "center", fontSize: "16px" })}
 `;
 
 const InputContainer = styled.div`
@@ -30,6 +33,7 @@ const InputContainer = styled.div`
   height: 40px;
   justify-content: space-between;
   border: 1px solid gray;
+  ${mobile({ width: "80%" })}
 `;
 
 const Input = styled.input`
