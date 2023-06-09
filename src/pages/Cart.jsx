@@ -4,7 +4,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import styled from "styled-components";
 import { Add, Remove } from "@mui/icons-material";
-import { stepLabelClasses } from "@mui/material";
 
 const Container = styled.div``;
 const Wrapper = styled.div`
